@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+  <head >
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Learn Javascript</title>
+    <style>
+        table, th, td {
+          border: 1px solid black;
+          border-collapse: collapse;
+          text-align: center;
+           }
+        th, td {
+  padding: 15px;
+}
+table {
+  border-spacing: 100px;
+}   
+tr:nth-child(even) {
+  background-color: #a3eba9;
+}    
+        </style>
+  </head>
+  <body >
+  <p style="background-color:#a3eba9; font-size: 2.5rem; padding: 1%; font-family: sans-serif; color: aliceblue;" >
+    The Difference Between the Document and Window
+  </p>
+  <h3 style="font:bold; font-family: sans-serif; color:rgb(65, 65, 65)">
+    What is Window?
+  </h3>
+  <p style="font-family: sans-serif; color:rgb(27, 27, 27);line-height: 200%;">
+    The window is at a root/top level at the JavaScript object hierarchy. It  is a global/root object in JavaScript and it is the root object of the Document object model(DOM);
+  </p>
+    <h3 style="font:bold; font-family: sans-serif; color:rgb(65, 65, 65)">
+      What is Document?
+    </h3>
+    <p style="font-family: sans-serif; color:rgb(27, 27, 27);line-height: 200%;">
+      A document is an object inside the window object and we use a document object for manipulation inside the document.
+    </p>
+    <h3 style="font:bold; font-family: sans-serif; color:rgb(65, 65, 65)">
+      Syntax of Window      </h3>
+      <p style="font-family: sans-serif; color:rgb(27, 27, 27);line-height: 200%;">
+        window.propertyname;
+      </p>
+<h3 style="font:bold; font-family: sans-serif; color:rgb(65, 65, 65)">
+  Syntax of Document
+      </h3>
+      <p style="font-family: sans-serif; color:rgb(27, 27, 27);line-height: 200%;">
+        document.propertyname
+        // OR
+        window.document.propertyname;
+      </p>
+    
+      <h3 style="font:bold; font-family: sans-serif; color:rgb(65, 65, 65)">
+        Document vs Window: A Comparative Study
+      </h3>
+
+      <table >
+        <thead style="font:bold; font-family: sans-serif; color:rgb(255, 255, 255); background-color:#a3eba9; padding: px;">
+          <tr >
+            <th >Document</th>
+            <th>Window</th>
+           </tr>
+        </thead>
+        <tbody style="font-family: sans-serif; color:rgb(27, 27, 27); text-align: left;">
+            <tr>
+                <td>It represents the document loaded inside the window or browser.</td>
+                <td>It represents the browser window in which you are seeing the content.</td>
+
+            </tr>
+            <tr>
+              <td>It is the root element of the document object model.	</td>
+              <td>The window is the global element for all objects, functions, etc.
+              </td>
+
+          </tr>
+          <tr>
+            <td>It is an object of window.</td>
+            <td>It is an object of the browser.
+            </td>
+
+        </tr>
+        <tr>
+          <td>We can not access windows objects properties inside the document.</td>
+          <td>We can access document object properties inside the window.
+          </td>
+
+      </tr>
+          <tr>
+             
+                <td>The properties related to it are stored in the document object.</td>
+                <td>The properties related to it are stored in the window object.</td>
+
+            </tr>
+            <tr>
+            
+                <td>It is loaded after the loading window because the window contains a document.	 </td>
+                <td>It is loaded before the document because window container document.</td>
+
+            </tr>
+
+      </table><br>
+      <h3 style="font:bold; font-family: sans-serif; color:rgb(65, 65, 65)">
+        Flow of Window and Document
+            </h3>
+
+<img src="1.png">
+  </body>
+</html>
